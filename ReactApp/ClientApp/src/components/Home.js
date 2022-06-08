@@ -1,66 +1,59 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import {Table} from 'react-bootstrap';
 import SolutionAdd from './SolutionAdd';
 import LoadingSpinner from './LoadingSpinner';
 
-export class Home extends Component {
-  static displayName = Home.name;
+export function Home() {
+    const [solutionList, setSolutionList] = useState([]);
+    const [errorMessage, setErrorMessage] = useState("");
+    const [isLoading, setIsLoading] = useState(true);
 
-  constructor(props){
-    super(props);
-    this.state = {solutionList: [],
-                  isLoading: true};
-    this._isMounted = false;
-  }
-
-  refreshList(){
-    axios.get(process.env.REACT_APP_API +`/api/CodeSolutions/`, ) 
-    .then(res => {
-      const solutionList = res.data;
-      this._isMounted && this.setState({ solutionList, isLoading: false });
+    useEffect(() => {
+        refreshList();
     });
-  }
 
-  componentDidMount() {
-    this._isMounted = true;
-    this._isMounted && this.refreshList()
-  }
+    const refreshList = () => {
+        axios.get(process.env.REACT_APP_API +`/api/CodeSolutions/`, ) 
+        .then(res => {
+          setSolutionList(res.data);
+          setIsLoading(false);
+        })
+        .catch( error => {
+          setErrorMessage(error.message);
+          setIsLoading(false);
+        });
+    };
 
-  componentDidUpdate() {
-    this.refreshList()
-  }
-
-  componentWillUnmount() {
-    this._isMounted = false;
- }
-
-  render () {
-    const {solutionList}=this.state;
-    return (
+    const renderSolutions = (
       <div>
         <Table className='mt-4' striped bordered hover size='sm'>
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Name</th>
-              <th>SolutionCode</th>
-              <th>Result</th>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>SolutionCode</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          {solutionList.map(sol =>
+            <tr key={sol.id}>
+              <td>{sol.id}</td>
+              <td>{sol.name}</td>
+              <td>{sol.solutionCode}</td>
+              <td>{sol.result}</td>
             </tr>
-          </thead>
-          <tbody>
-            {solutionList.map(sol =>
-              <tr key={sol.id}>
-                <td>{sol.id}</td>
-                <td>{sol.name}</td>
-                <td>{sol.solutionCode}</td>
-                <td>{sol.result}</td>
-              </tr>
-          )}
-          </tbody>
+        )}
+        </tbody>
         </Table>
-        {this.state.isLoading ? <LoadingSpinner/> : <SolutionAdd/>}
+        <SolutionAdd/>
       </div>
     );
-  }  
+
+    return (
+        <div>         
+          {isLoading ? <LoadingSpinner/> : errorMessage ? <div className='error'> {errorMessage} </div> : renderSolutions}
+        </div>
+      );
 }
