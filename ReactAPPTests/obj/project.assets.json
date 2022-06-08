@@ -11001,11 +11001,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactAPPTests\\ReactAPPTests.csproj",
+      "projectUniqueName": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApps\\ReactAPPTests\\ReactAPPTests.csproj",
       "projectName": "ReactAPPTests",
-      "projectPath": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactAPPTests\\ReactAPPTests.csproj",
+      "projectPath": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApps\\ReactAPPTests\\ReactAPPTests.csproj",
       "packagesPath": "C:\\Users\\697723\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactAPPTests\\obj\\",
+      "outputPath": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApps\\ReactAPPTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\697723\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11022,8 +11022,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApp\\ReactApp.csproj": {
-              "projectPath": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApp\\ReactApp.csproj"
+            "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApps\\ReactApp\\ReactApp.csproj": {
+              "projectPath": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApps\\ReactApp\\ReactApp.csproj"
             }
           }
         }

@@ -2,7 +2,7 @@
 "SpaProxyServer": {
 "ServerUrl": "https://localhost:44430",
 "LaunchCommand": "npm start",
-"WorkingDirectory": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApp\\ClientApp\\",
+"WorkingDirectory": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApps\\ReactApp\\ClientApp\\",
 "MaxTimeoutInSeconds": "120"
 }
 }

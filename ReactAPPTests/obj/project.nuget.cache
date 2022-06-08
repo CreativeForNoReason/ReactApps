@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NJDmZdRugQhkm0StSZAnCwroFpZqDq/B91EpjwsaBGnV4R6n3Bbx3sUAp2ad8tWmZdRDz5o2h/ECRDyq8PHnHw==",
+  "dgSpecHash": "wlDIzWT0oLiHjeMID6DmunDilCHqVnYxUNsV17BRGsQ6F5wIpZxOi7VCHJCA96J54A+Afv9Nm6NZoDF593oJvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactAPPTests\\ReactAPPTests.csproj",
+  "projectFilePath": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApps\\ReactAPPTests\\ReactAPPTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\697723\\.nuget\\packages\\autofixture\\4.17.0\\autofixture.4.17.0.nupkg.sha512",
     "C:\\Users\\697723\\.nuget\\packages\\autofixture.automoq\\4.17.0\\autofixture.automoq.4.17.0.nupkg.sha512",

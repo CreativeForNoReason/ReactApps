@@ -1,7 +1,7 @@
 ﻿
 using AutoFixture.Xunit2;
 
-namespace ReactAPPTests
+namespace ReactAPPTests.Helpers
 {
     public sealed class InlineAutoMoqDataAttribute : InlineAutoDataAttribute
     {

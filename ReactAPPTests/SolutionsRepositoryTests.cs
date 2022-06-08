@@ -7,6 +7,7 @@ using ReactApp.Data.HttpRequests;
 using ReactApp.Data.Interfaces;
 using ReactApp.Data.Repositories;
 using ReactApp.Models;
+using ReactAPPTests.Helpers;
 
 namespace ReactAPPTests
 {

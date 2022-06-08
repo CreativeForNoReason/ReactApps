@@ -9622,11 +9622,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApp\\ReactApp.csproj",
+      "projectUniqueName": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApps\\ReactApp\\ReactApp.csproj",
       "projectName": "ReactApp",
-      "projectPath": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApp\\ReactApp.csproj",
+      "projectPath": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApps\\ReactApp\\ReactApp.csproj",
       "packagesPath": "C:\\Users\\697723\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApp\\obj\\",
+      "outputPath": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApps\\ReactApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\697723\\AppData\\Roaming\\NuGet\\NuGet.Config",

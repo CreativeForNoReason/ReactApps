@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KzQrrDQIfEfQdKGu3sbGdDEgHXvR1WP+qVrS8/j5wBgZtDpJEAk4gKxqAFOrKe/B7BxnKXrFChmDF/TgO4rVIA==",
+  "dgSpecHash": "Vm7DGblBCkac8LVLk+u9bR2UXxyajwWCKjRlUyolaIxMv0Aui4VbcrHOwkE5SldmXIBEU2tHRTUBlP6xT/4l8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApp\\ReactApp.csproj",
+  "projectFilePath": "C:\\Users\\697723\\Documents\\VisualStudio\\ReactApp\\ReactApps\\ReactApp\\ReactApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\697723\\.nuget\\packages\\castle.core\\5.0.0\\castle.core.5.0.0.nupkg.sha512",
     "C:\\Users\\697723\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

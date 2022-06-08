@@ -2,7 +2,7 @@
 using AutoFixture.AutoMoq;
 using ReactApp.Models;
 
-namespace ReactAPPTests
+namespace ReactAPPTests.Helpers
 {
     public class GlobalCustomization : ICustomization
     {

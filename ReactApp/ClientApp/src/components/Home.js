@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import {Table} from 'react-bootstrap';
 import SolutionAdd from './SolutionAdd';
+import LoadingSpinner from './LoadingSpinner';
 
 export class Home extends Component {
   static displayName = Home.name;
 
   constructor(props){
     super(props);
-    this.state = {solutionList: []};
+    this.state = {solutionList: [],
+                  isLoading: true};
     this._isMounted = false;
   }
 
@@ -16,7 +18,7 @@ export class Home extends Component {
     axios.get(process.env.REACT_APP_API +`/api/CodeSolutions/`, ) 
     .then(res => {
       const solutionList = res.data;
-      this._isMounted && this.setState({ solutionList });
+      this._isMounted && this.setState({ solutionList, isLoading: false });
     });
   }
 
@@ -57,7 +59,7 @@ export class Home extends Component {
           )}
           </tbody>
         </Table>
-        <SolutionAdd/>
+        {this.state.isLoading ? <LoadingSpinner/> : <SolutionAdd/>}
       </div>
     );
   }  
