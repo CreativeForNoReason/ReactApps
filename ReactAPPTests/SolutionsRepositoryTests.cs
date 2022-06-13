@@ -33,6 +33,25 @@ namespace ReactAPPTests
         }
 
         [Theory]
+        [AutoMoqData]
+        public async Task PostCodeSolution_ReturnsNull_WhenResponseOutputIsNull(
+            CodeSolution solution,
+            PostResponse response,
+            [Frozen] Mock<IPostRequests> postRequests,
+            SolutionRepository rep)
+        {
+            // arrange
+            postRequests.Setup(x => x.GetResponseFromPostRequest(It.IsAny<string>())).ReturnsAsync(response);
+            response.output = null;
+
+            // act
+            var result = await rep.PostCodeSolution(solution);
+
+            // assert
+            Assert.Null(result);
+        }
+
+        [Theory]
         [InlineAutoMoqData("Ok")]
         public async Task PostCodeSolution_ReturnsResultFromResponse_WhenStatusCodeIs200(
             string output,
