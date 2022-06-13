@@ -1,14 +1,14 @@
 .DS_Store
 
 # dotnet core
-bin/
-obj/
-project.lock.json
-NuGetScratch/
+ReactApp/bin/
+ReactApp/obj/
+ReactApp/project.lock.json
+ReactApp/NuGetScratch/
 
-api/wwwroot/**
-!api/wwwroot/scratch.html
-!api/wwwroot/favicon.ico
+ReactApp/api/wwwroot/**
+!ReactApp/api/wwwroot/scratch.html
+!ReactApp/api/wwwroot/favicon.ico
 
 # node
 node_modules/
@@ -16,18 +16,18 @@ typings/
 npm-debug.log
 
 # client-react
-client-react/components/*.js
-client-react.test/build
-!client-react.test/build/client-react/styles/
+ReactApp/client-react/components/*.js
+ReactApp/client-react.test/build
+!ReactApp/client-react.test/build/client-react/styles/
 
 # ops
-ops/hosts
-ops/config.yml
-ops/*.retry
+ReactApp/ops/hosts
+ReactApp/ops/config.yml
+ReactApp/ops/*.retry
 
 # other
 *.js.map
 
 # IDE
-.idea/
-.vs/
+ReactApp/.idea/
+ReactApp/.vs/
