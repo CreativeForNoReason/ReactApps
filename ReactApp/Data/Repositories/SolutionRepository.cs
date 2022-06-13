@@ -25,7 +25,7 @@ namespace ReactApp.Data.Repositories
         {
             var result = await _postRequests.GetResponseFromPostRequest(codeSolution.SolutionCode);
 
-            if (result.statusCode != 200)
+            if (result.statusCode != 200 || result.output == null)
             {
                 return null;
             }

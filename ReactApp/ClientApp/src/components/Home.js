@@ -27,6 +27,7 @@ export function Home() {
 
     const renderSolutions = (
       <div>
+        <SolutionAdd/>
         <Table className='mt-4' striped bordered hover size='sm'>
         <thead>
           <tr>
@@ -47,7 +48,6 @@ export function Home() {
         )}
         </tbody>
         </Table>
-        <SolutionAdd/>
       </div>
     );
 
