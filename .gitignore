@@ -5,6 +5,10 @@ ReactApp/bin/
 ReactApp/obj/
 ReactApp/project.lock.json
 ReactApp/NuGetScratch/
+ReactAPPTests/bin/
+ReactAPPTests/obj/
+ReactAPPTests/project.lock.json
+ReactAPPTests/NuGetScratch/
 
 ReactApp/api/wwwroot/**
 !ReactApp/api/wwwroot/scratch.html
@@ -31,4 +35,5 @@ ReactApp/ops/*.retry
 # IDE
 ReactApp/.idea/
 ReactApp/.vs/
-ReactApp/.vs/ReactApp/v17/.suo
+ReactAPPTests/.idea/
+ReactAPPTests/.vs/
